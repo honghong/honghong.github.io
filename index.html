@@ -129,6 +129,7 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
     <span class="logo">Hong Zhang</span>
     <ul>
       <li><a href="#products">Products</a></li>
+      <li><a href="#featured">Featured Project</a></li>
       <li><a href="#ai">AI/ML Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -270,6 +271,32 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
     </article>
   </div>
 </section>
+
+<section id="featured">
+  <div class="wrap">
+    <h2>Featured project</h2>
+    <p class="sub">A full-stack data application I built and run on Azure: a Python pipeline, Pandas analytics, a React dashboard, and infrastructure as code.</p>
+    <article class="card">
+      <span class="tag">Personal project · 2026 · Live</span>
+      <h3>Energy Market Dashboard</h3>
+      <div class="meta">Crude oil, natural gas and refined-product prices, with spread and volatility analytics</div>
+      <p>A scheduled Python job loads daily U.S. EIA prices into PostgreSQL. A FastAPI service computes the analytics with Pandas, and a React dashboard displays them. GitHub Actions deploys it to Azure Container Apps.</p>
+      <ul>
+        <li><b>Data pipeline:</b> incremental, idempotent loads with a revision lookback; if one series fails, the others still load, and every run is logged</li>
+        <li><b>Analytics:</b> 20/50-day moving averages, annualized volatility, and the Brent–WTI and 3-2-1 crack spreads with rolling z-scores</li>
+        <li><b>Cloud:</b> Container App plus a scheduled ingestion job, PostgreSQL Flexible Server, Key Vault with a managed identity, Bicep, and OIDC deploys</li>
+        <li><b>Quality:</b> 35 automated tests, plus lint, type checks and container builds in CI</li>
+      </ul>
+      <div class="cta" style="margin:4px 0 14px">
+        <a class="btn primary" href="https://emd-web.graymeadow-69525408.centralus.azurecontainerapps.io/" target="_blank" rel="noopener">Live demo</a>
+        <a class="btn" href="https://github.com/honghong/energy-market-dashboard" target="_blank" rel="noopener">Code on GitHub</a>
+        <a class="btn" href="https://github.com/honghong/energy-market-dashboard#architecture" target="_blank" rel="noopener">Architecture</a>
+      </div>
+      <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Pandas</span><span class="chip">PostgreSQL</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Azure Container Apps</span><span class="chip">Bicep</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span></div>
+    </article>
+  </div>
+</section>
+
 
 <section id="ai">
   <div class="wrap">
