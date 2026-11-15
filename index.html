@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hong Zhang — Software Engineering Supervisor &amp; Product Owner</title>
-<meta name="description" content="Hong Zhang — Software engineering supervisor and product owner. Enterprise SaaS, B2B payments, integration platforms, and generative AI.">
-<meta property="og:title" content="Hong Zhang — Software Engineering Supervisor &amp; Product Owner">
-<meta property="og:description" content="Product owner for enterprise rail-logistics SaaS and B2B payments. .NET, Azure, and applied AI.">
+<title>Hong Zhang — Senior Full Stack Developer &amp; Software Engineering Supervisor</title>
+<meta name="description" content="Hong Zhang — Senior full stack developer and software engineering supervisor. .NET, Python, React, data pipelines, APIs, Azure, and applied AI.">
+<meta property="og:title" content="Hong Zhang — Senior Full Stack Developer &amp; Software Engineering Supervisor">
+<meta property="og:description" content="Full stack developer and engineering lead: data pipelines, APIs and dashboards in .NET, Python and React on Azure.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231B365D'/><text x='50%25' y='56%25' font-family='Arial' font-size='28' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='middle'>HZ</text></svg>">
 <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('anim');</script>
 <style>
@@ -128,8 +128,8 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
   <div class="wrap">
     <span class="logo">Hong Zhang</span>
     <ul>
-      <li><a href="#products">Products</a></li>
       <li><a href="#featured">Featured Project</a></li>
+      <li><a href="#products">Products</a></li>
       <li><a href="#ai">AI/ML Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -145,8 +145,8 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
   <div class="hero-text">
   <span class="eyebrow">Spring / Houston, TX</span>
   <h1>Hong Zhang</h1>
-  <p class="role">Software Engineering Supervisor · Product Owner</p>
-  <p class="lede">I have 15+ years of experience building enterprise software, and today I manage products and lead the people who build them. I manage four rail-logistics SaaS products and a B2B payments platform. My job covers roadmaps, backlogs and releases, and I lead a team of 10+ engineering, QA and support staff. My hands-on background in .NET and Azure helps me work closely with architects. I also bring recent postgraduate training in AI/ML from UT Austin.</p>
+  <p class="role">Senior Full Stack Developer · Software Engineering Supervisor</p>
+  <p class="lede">I have 15+ years of experience building production applications, data pipelines and APIs for energy, chemical and logistics customers. I work hands-on in C#/.NET, Python, React/TypeScript, SQL and Azure, with strong habits in automated testing, CI/CD and code review. Today I also lead a team of 10+ engineers and own the roadmap for a rail-logistics SaaS suite and a B2B payments platform. I completed a postgraduate program in AI/ML at UT Austin in 2026.</p>
   <div class="cta">
     <a class="btn primary" href="https://drive.google.com/file/d/11zeX814k5IF9VcLK-U5PEE74M0lXAMEj/view?usp=drive_link" target="_blank" rel="noopener">View resume</a>
     <a class="btn" href="mailto:hong.zhang.us@gmail.com">Email me</a>
@@ -162,6 +162,31 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
     <div class="stat"><b>290+</b><span>pull requests reviewed</span></div>
   </div>
 </div>
+
+<section id="featured">
+  <div class="wrap">
+    <h2>Featured project</h2>
+    <p class="sub">A full-stack data application I built and run on Azure: a Python pipeline, Pandas analytics, a React dashboard, and infrastructure as code.</p>
+    <article class="card">
+      <span class="tag">Personal project · 2026 · Live</span>
+      <h3>Energy Market Dashboard</h3>
+      <div class="meta">Crude oil, natural gas and refined-product prices, with spread and volatility analytics</div>
+      <p>A scheduled Python job loads daily U.S. EIA prices into PostgreSQL. A FastAPI service computes the analytics with Pandas, and a React dashboard displays them. GitHub Actions deploys it to Azure Container Apps.</p>
+      <ul>
+        <li><b>Data pipeline:</b> incremental, idempotent loads with a revision lookback; if one series fails, the others still load, and every run is logged</li>
+        <li><b>Analytics:</b> 20/50-day moving averages, annualized volatility, and the Brent–WTI and 3-2-1 crack spreads with rolling z-scores</li>
+        <li><b>Cloud:</b> Container App plus a scheduled ingestion job, PostgreSQL Flexible Server, Key Vault with a managed identity, Bicep, and OIDC deploys</li>
+        <li><b>Quality:</b> 35 automated tests, plus lint, type checks and container builds in CI</li>
+      </ul>
+      <div class="cta" style="margin:4px 0 14px">
+        <a class="btn primary" href="https://emd-web.graymeadow-69525408.centralus.azurecontainerapps.io/" target="_blank" rel="noopener">Live demo</a>
+        <a class="btn" href="https://github.com/honghong/energy-market-dashboard" target="_blank" rel="noopener">Code on GitHub</a>
+        <a class="btn" href="https://github.com/honghong/energy-market-dashboard#architecture" target="_blank" rel="noopener">Architecture</a>
+      </div>
+      <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Pandas</span><span class="chip">PostgreSQL</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Azure Container Apps</span><span class="chip">Bicep</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span></div>
+    </article>
+  </div>
+</section>
 
 <section id="products">
   <div class="wrap">
@@ -272,31 +297,6 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
   </div>
 </section>
 
-<section id="featured">
-  <div class="wrap">
-    <h2>Featured project</h2>
-    <p class="sub">A full-stack data application I built and run on Azure: a Python pipeline, Pandas analytics, a React dashboard, and infrastructure as code.</p>
-    <article class="card">
-      <span class="tag">Personal project · 2026 · Live</span>
-      <h3>Energy Market Dashboard</h3>
-      <div class="meta">Crude oil, natural gas and refined-product prices, with spread and volatility analytics</div>
-      <p>A scheduled Python job loads daily U.S. EIA prices into PostgreSQL. A FastAPI service computes the analytics with Pandas, and a React dashboard displays them. GitHub Actions deploys it to Azure Container Apps.</p>
-      <ul>
-        <li><b>Data pipeline:</b> incremental, idempotent loads with a revision lookback; if one series fails, the others still load, and every run is logged</li>
-        <li><b>Analytics:</b> 20/50-day moving averages, annualized volatility, and the Brent–WTI and 3-2-1 crack spreads with rolling z-scores</li>
-        <li><b>Cloud:</b> Container App plus a scheduled ingestion job, PostgreSQL Flexible Server, Key Vault with a managed identity, Bicep, and OIDC deploys</li>
-        <li><b>Quality:</b> 35 automated tests, plus lint, type checks and container builds in CI</li>
-      </ul>
-      <div class="cta" style="margin:4px 0 14px">
-        <a class="btn primary" href="https://emd-web.graymeadow-69525408.centralus.azurecontainerapps.io/" target="_blank" rel="noopener">Live demo</a>
-        <a class="btn" href="https://github.com/honghong/energy-market-dashboard" target="_blank" rel="noopener">Code on GitHub</a>
-        <a class="btn" href="https://github.com/honghong/energy-market-dashboard#architecture" target="_blank" rel="noopener">Architecture</a>
-      </div>
-      <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Pandas</span><span class="chip">PostgreSQL</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Azure Container Apps</span><span class="chip">Bicep</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span></div>
-    </article>
-  </div>
-</section>
-
 
 <section id="ai">
   <div class="wrap">
@@ -317,14 +317,14 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
 <section id="skills">
   <div class="wrap">
     <h2>Skills</h2>
-    <p class="sub">Product leadership backed by hands-on engineering.</p>
+    <p class="sub">Hands-on full stack engineering, plus product and team leadership.</p>
     <div class="card">
-      <div class="skill-row"><h4>Product &amp; Leadership</h4><div class="chips"><span class="chip">Product roadmaps</span><span class="chip">Backlog prioritization</span><span class="chip">User stories &amp; acceptance criteria</span><span class="chip">Release planning</span><span class="chip">Agile / Scrum</span><span class="chip">People management</span><span class="chip">Stakeholder management</span></div></div>
       <div class="skill-row"><h4>AI &amp; Machine Learning</h4><div class="chips"><span class="chip">Azure OpenAI</span><span class="chip">Multi-agent systems</span><span class="chip">RAG</span><span class="chip">Vector search</span><span class="chip">Prompt engineering</span><span class="chip">CNNs</span><span class="chip">Ensemble ML</span></div></div>
-      <div class="skill-row"><h4>Backend &amp; Architecture</h4><div class="chips"><span class="chip">C#</span><span class="chip">.NET 10 / 8</span><span class="chip">ASP.NET Core</span><span class="chip">EF Core</span><span class="chip">REST / OData</span><span class="chip">Python</span><span class="chip">SQL Server</span><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">Linux</span><span class="chip">SOLID</span></div></div>
-      <div class="skill-row"><h4>Cloud &amp; DevOps</h4><div class="chips"><span class="chip">Azure Functions</span><span class="chip">Key Vault</span><span class="chip">Azure Pipelines</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span><span class="chip">SonarCloud</span><span class="chip">Redis</span><span class="chip">SignalR</span></div></div>
+      <div class="skill-row"><h4>Backend &amp; Architecture</h4><div class="chips"><span class="chip">C#</span><span class="chip">.NET 10 / 8</span><span class="chip">ASP.NET Core</span><span class="chip">EF Core</span><span class="chip">REST / OData</span><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Pandas</span><span class="chip">SQL Server</span><span class="chip">PostgreSQL</span><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">Linux</span><span class="chip">SOLID</span></div></div>
+      <div class="skill-row"><h4>Cloud &amp; DevOps</h4><div class="chips"><span class="chip">Azure Container Apps</span><span class="chip">Azure Functions</span><span class="chip">Bicep</span><span class="chip">Key Vault</span><span class="chip">Azure Pipelines</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span><span class="chip">SonarCloud</span><span class="chip">Redis</span><span class="chip">SignalR</span></div></div>
       <div class="skill-row"><h4>Frontend</h4><div class="chips"><span class="chip">Angular 18</span><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">DevExtreme</span><span class="chip">Responsive UI/UX</span></div></div>
       <div class="skill-row"><h4>Data &amp; Integration</h4><div class="chips"><span class="chip">ETL pipelines</span><span class="chip">Kafka / Event Hubs</span><span class="chip">Webhooks</span><span class="chip">Databricks</span><span class="chip">Bank APIs (ACH, wires)</span><span class="chip">EDI</span></div></div>
+      <div class="skill-row"><h4>Product &amp; Leadership</h4><div class="chips"><span class="chip">Product roadmaps</span><span class="chip">Backlog prioritization</span><span class="chip">User stories &amp; acceptance criteria</span><span class="chip">Release planning</span><span class="chip">Agile / Scrum</span><span class="chip">People management</span><span class="chip">Stakeholder management</span></div></div>
     </div>
   </div>
 </section>
@@ -332,7 +332,7 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
 <section id="experience">
   <div class="wrap">
     <h2>Experience</h2>
-    <p class="sub">From developer to engineering supervisor and product owner.</p>
+    <p class="sub">Full stack developer to engineering supervisor, still hands-on.</p>
     <div class="tl">
       <div class="tl-item"><h3>Software Engineering Supervisor</h3><div class="meta">Bourque Logistics (RAILTRAC) · The Woodlands, TX · 2023 – present</div>
         <ul><li>Own 5 enterprise products and lead a team of 10+; run performance reviews and hiring</li><li>Delivered generative-AI features, bank payment integrations, and platform modernization</li></ul></div>
@@ -363,7 +363,7 @@ html.anim .reveal.card.in:hover,html.anim .reveal.stat.in:hover{transform:transl
 <footer id="contact">
   <div class="wrap">
     <h2>Let's talk</h2>
-    <p>I am open to product and engineering leadership roles in the Houston area.</p>
+    <p>I am open to senior engineering, technical lead, and product or engineering leadership roles in the Houston area.</p>
     <div class="contact">
       <a class="btn primary" href="mailto:hong.zhang.us@gmail.com">hong.zhang.us@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/hong-zhang-606a32187" target="_blank" rel="noopener">LinkedIn</a>
